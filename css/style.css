@@ -106,12 +106,113 @@ a {
 }
 
 .afterHeaderText p {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
-/* Sreach Bar */
-.srearchBox {
+/* search Bar */
+.searchBox {
     display: flex;
+    margin-top: 35px;
+}
+
+.boxIcone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 49px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #F2F2F2;
+}
+
+.icone{
+    color: black;
+    font-size: 18px;
+}
+.noEspaceInput {
+    display: flex;
+}
+
+.inputSearch {
+    border: 2px solid #F2F2F2;
+    width: 210px;
+    height: 44px;
+    border-right: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.buttonSearch {
+    width: 132px;
+    height: 49px;
+    background-color: var(--main-color);
+    color: white;
+    border-color: transparent;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Filtres */
+.filtres {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.buttonFiltre {
+    background-color: transparent;
+    border: 3px solid #F2F2F2;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.buttonFiltreEconomique {
+    width: 173px;
+    height: 50px;
+}
+
+.buttonFiltreFamille {
+    width: 134px;
+    height: 50px;
+}
+
+.buttonFiltreRomantique {
+    width: 170px;
+    height: 50px;
+}
+
+.buttonFiltreNosPepites {
+    width: 167px;
+    height: 50px;
+}
+
+.buttonFiltre:hover {
+    background-color: lightblue;
+}
+/*Box info*/
+.boxInfo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    border-radius: 100%;
+    border: 1px solid #F2F2F2;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -130,6 +231,66 @@ a {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+}
+
+.hebergements h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.positionCards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.firstCard {
+    display: flex;
+    width: 250px;
+    height: 207px;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.firstCard img {
+    display: flex;
+    width: 235px;
+    height: 124px;
+    object-fit: cover;
+    margin-top: 5px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.titleCardHebergement {
+    margin-top: 5px;
+    margin-left: 15px;
+    align-self: flex-start;
+}
+
+.textCardHebergement {
+    margin-top: -16px;
+    margin-left: 15px;
+    align-self: flex-start;
+}
+
+.starsCardHebergement {
+    margin-top: -12px;
+    margin-left: 15px;
+    align-self: flex-start;
+}
+
+.hebergements h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
 }
 
 /****** Populaires ***********/
@@ -177,7 +338,16 @@ a {
     margin-bottom: 5px;
 }
 
+/* Activités à Marseille */
 
+.activites {
+    background-color: var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.activites h2 {
+    margin-top: 50px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

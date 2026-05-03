@@ -67,8 +67,8 @@ a {
 }
 
 .logoBooki {
-    width: 61px;
-    height: 19px;
+    width: 91px;
+    height: 29px;
 }
 .divButtonHeader {
     display: flex;
@@ -76,10 +76,10 @@ a {
 }
 
 .buttonHeaderHébergement {
-    width: 113px;
     height: 35px;
     background-color: transparent;
     border: transparent;
+    padding-top: 10px;
     font-size: 16px;
 }
 
@@ -89,10 +89,10 @@ a {
 }
 
 .buttonHeaderActivité {
-    width: 63px;
     height: 35px;
     background-color: transparent;
     border: transparent;
+    padding-top: 10px;
     font-size: 16px;
 }
 
@@ -156,6 +156,9 @@ a {
     border-bottom-right-radius: 20px;
     font-size: 16px;
     font-weight: 700;
+}
+.buttonSearch .fa-sistrix{
+    font-size: 0px;
 }
 
 /* Filtres */
@@ -221,6 +224,7 @@ a {
     height: 24px;
     font-size: 12px;
 }
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -475,6 +479,7 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     .main-container{
         padding: 0 0px;
     }
@@ -553,9 +558,6 @@ a {
     }
 
     /* Hebergements et populaires */
-    .hebergements-and-populaires section {
-    }
-
     .hebergements-and-populaires .hebergements {
         order: 2;
         background-color: transparent;
@@ -563,15 +565,72 @@ a {
 
     .hebergements-and-populaires .populaires {
         order: 1;
+        width: 7590px;
         border-radius: 0px;
+    }
+    /* Populaires */
+    .fa-chart-line {
+        font-size: 25px;
+    }
+
+    .section-title {
+        font-size: 30px;
     }
 
     .populaires-cards {
         flex-direction: column;
+        align-items: start;
     }
 
     .card {
-        width: 335px;
+        width: 395px;
         height: 146px;
+    }
+    .card img {
+        width: 115px;
+        height: 146px;
+    }
+    .populaires-cards .card-title {
+        font-size: 20px;
+    }
+    .populaires-cards .card-subtitle {
+        font-size: 18px;
+    }
+    .fa-star {
+        font-size: 14px;
+    }
+    /* Hebergements */
+    .firstCard {
+        width: 335px;
+        height: 207px;
+    }
+    .firstCard img {
+        width: 320px;
+        height: 124px;
+    }
+    /* Activités */
+    .activitesCards {
+        width: 315px;
+        height: 141px;
+    }
+    .activitesCardsTxt {
+        width: 315px;
+        height: 59px;
+    }
+    .hebergements h3 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    /* Footer */
+    .boxFooter {
+        justify-items: start;
+        flex-direction: column;
+        width: 100%;
+        height: 461px;
+        gap: 15px;
+        padding-left: 20px;
+    }
+    .boxFooter div:first-child {
+        margin-left: 0;
     }
 }

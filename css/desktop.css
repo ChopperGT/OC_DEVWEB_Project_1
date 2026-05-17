@@ -316,7 +316,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
 }
 
 /****** Populaires ***********/
@@ -334,7 +333,6 @@ a {
 }
 .fa-chart-line {
     font-size: 20px;
-    margin-top: -15px;
 }
 .populaires-cards .card {
     display: flex;
